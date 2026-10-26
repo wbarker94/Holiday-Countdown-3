@@ -46,6 +46,27 @@
   .logo{height:clamp(26px,6cqi,42px);width:auto;display:block}
   .greet{font-family:"Bitter",Georgia,serif;font-weight:500;font-size:clamp(12px,2.2cqi,16px);color:var(--frost);text-align:right;line-height:1.3}
 
+  .rei-brand {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    background: rgba(255,255,255,0.96);
+    border-radius: 12px;
+    padding: clamp(8px,1.5cqi,12px) clamp(10px,2.5cqi,18px);
+    width: min(100%, 460px);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.15);
+  }
+  .rei-brand svg {
+    display:block;
+    width:100%;
+    height:auto;
+    overflow:visible;
+  }
+  .rei-brand .mark,
+  .rei-brand .word {
+    fill: #000;
+  }
+
   h1{
     font-family:"Bitter",Georgia,serif;font-weight:800;
     font-size:clamp(20px,5.4cqi,40px);line-height:1.1;letter-spacing:-.01em;
@@ -114,6 +135,28 @@
 
   <div class="inner">
     <div class="top">
+      <div class="rei-brand" aria-label="REI Co-op">
+        <svg viewBox="0 0 620 260" role="img" aria-labelledby="reiTitle reiDesc" xmlns="http://www.w3.org/2000/svg">
+          <title id="reiTitle">REI Co-op</title>
+          <desc id="reiDesc">REI Co-op logo with mountains and pine trees</desc>
+          <g class="mark">
+            <path d="M18 166L75 100L122 142L158 92L225 166H18Z"/>
+            <path d="M290 166L380 68L456 144L510 98L590 166H290Z"/>
+            <path d="M112 166L128 140L145 166H112Z"/>
+            <path d="M175 166L186 150L200 166H175Z"/>
+            <path d="M96 166L96 214H112V166H96Z"/>
+            <path d="M78 166L78 198H94V166H78Z"/>
+            <path d="M150 166L150 202H166V166H150Z"/>
+            <path d="M328 166L328 214H344V166H328Z"/>
+            <path d="M360 166L360 198H376V166H360Z"/>
+            <path d="M314 166L314 204H330V166H314Z"/>
+          </g>
+          <g class="word" font-family="Arial Black, Segoe UI, sans-serif" font-weight="900" letter-spacing="-8">
+            <text x="62" y="168" font-size="166">REI</text>
+            <text x="66" y="235" font-size="72" letter-spacing="-3">co-op</text>
+          </g>
+        </svg>
+      </div>
       <p class="greet">Happy holidays<br>from your co-op</p>
     </div>
 
